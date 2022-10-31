@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>JavaScript Calculator</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header fw-bold fst-italic">
+            <div class="row d-flex">
+                <div class="col-6 text-start">
+                    <span>Submitted By:</span> Muhammad Mubeen Ahmad
+                </div>
+                <div class="col-6 text-end">
+                    <span>Registration Number:</span> 19-NTU-CS-1147
+                </div>
+            </div>
+            <hr>
+        </div>
+        <section class="main">
+            <h1 class="heading">Basic Calculator</h1>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <form id="myform" name="form">
+                        <div class="row mb-3 justify-content-center">
+                            <div class="col-10">
+                                <input type="text" name="displayResult" placeholder="0" class="display form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3 justify-content-center">
+                            <div class="col-2">
+                                <input type="button" name="b0" value="0" class="form-control"
+                                    onclick="calcNumbers(b0.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="b1" value="1" class="form-control"
+                                    onclick="calcNumbers(b1.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="b2" value="2" class="form-control"
+                                    onclick="calcNumbers(b2.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="addb" value="+" class="form-control addbtn"
+                                    onclick="calcNumbers(addb.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="sin" value="sin" class="form-control sinbtn"
+                                    onclick="calcNumbers(sin.value)">
+                            </div>
+                        </div>
+                        <div class="row mb-3 justify-content-center">
+                            <div class="col-2">
+                                <input type="button" name="b3" value="3" class="form-control"
+                                    onclick="calcNumbers(b3.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="b4" value="4" class="form-control"
+                                    onclick="calcNumbers(b4.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="b5" value="5" class="form-control"
+                                    onclick="calcNumbers(b5.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="subb" value="-" class="form-control subbtn"
+                                    onclick="calcNumbers(subb.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="cos" value="cos" class="form-control cosbtn"
+                                    onclick="calcNumbers(cos.value)">
+                            </div>
+                        </div>
+                        <div class="row mb-3 justify-content-center">
+                            <div class="col-2">
+                                <input type="button" name="b6" value="6" class="form-control"
+                                    onclick="calcNumbers(b6.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="b7" value="7" class="form-control"
+                                    onclick="calcNumbers(b7.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="b8" value="8" class="form-control"
+                                    onclick="calcNumbers(b8.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="mulb" value="x" class="form-control multiplybtn"
+                                    onclick="calcNumbers(mulb.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="tan" value="tan" class="form-control tanbtn"
+                                    onclick="calcNumbers(tan.value)">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-2">
+                                <input type="button" name="b9" value="9" class="form-control"
+                                    onclick="calcNumbers(b9.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" value="C" class="form-control clearbtn" onclick="clearResult()">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" value="=" class="form-control" onclick="calculateResult()">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="divb" value="/" class="form-control dividebtn"
+                                    onclick="calcNumbers(divb.value)">
+                            </div>
+                            <div class="col-2">
+                                <input type="button" name="log" value="log" class="form-control logbtn"
+                                    onclick="calcNumbers(log.value)">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
